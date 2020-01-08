@@ -8,7 +8,7 @@ if sys.version_info[0]>2:
     xrange = range
 
 SIZE = 640, 700
-mv = pygame.image.load('mv.png')
+mv = pygame.image.load('logic/img/mv.png')
 pygame.display.set_icon(mv)
 pygame.display.set_caption("Avião")
 
@@ -191,37 +191,38 @@ def __main__():
     for teteu in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*5, 1+random.random()*5
-        Run.objects.append(Ball("1teteu.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/1teteu.png",(x,y),(dx,dy)))
     for natan in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*5, 1+random.random()*5
-        Run.objects.append(Ball("natan.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/natan.png",(x,y),(dx,dy)))
     
     for lista_rei in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("1teteu.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/1teteu.png",(x,y),(dx,dy)))
     for gustavo in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("gustavo.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/gustavo.png",(x,y),(dx,dy)))
     for vinicios in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("vini.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/vini.png",(x,y),(dx,dy)))
     
     for maykon in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("lindo.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/lindo.png",(x,y),(dx,dy)))
     for abioluz in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("luz.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/luz.png",(x,y),(dx,dy)))
     for bruno in xrange(0):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("bruno.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball("logic/img/bruno.png",(x,y),(dx,dy)))
+
 
 
     Game.Start()
