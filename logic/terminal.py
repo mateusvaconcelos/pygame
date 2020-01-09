@@ -3,6 +3,12 @@
 import pygame
 import random
 import sys
+from logic_cmd_main import *
+
+
+
+
+
 
 if sys.version_info[0]>2:
     xrange = range
@@ -196,20 +202,11 @@ def __main__():
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*5, 1+random.random()*5
         Run.objects.append(Ball("logic/img/natan.png",(x,y),(dx,dy)))
-    
-    for lista_rei in xrange(1):
+    for peido in xrange(1):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
-        dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("logic/img/1teteu.png",(x,y),(dx,dy)))
-    for gustavo in xrange(1):
-        x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
-        dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("logic/img/gustavo.png",(x,y),(dx,dy)))
-    for vinicios in xrange(1):
-        x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
-        dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("logic/img/vini.png",(x,y),(dx,dy)))
-    
+        dx, dy = 1+random.random()*5, 1+random.random()*5
+        Run.objects.append(Ball("logic/img/peido.png",(x,y),(dx,dy)))
+
     for maykon in xrange(1):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
@@ -221,7 +218,7 @@ def __main__():
     for bruno in xrange(1):
         x, y = random.randrange(screenrect.w), random.randrange(screenrect.h)
         dx, dy = 1+random.random()*2, 1+random.random()*2
-        Run.objects.append(Ball("logic/img/bruno.png",(x,y),(dx,dy)))
+        Run.objects.append(Ball(asss,(x,y),(dx,dy)))
 
 
     Game.Start()

@@ -1,33 +1,23 @@
-def visi(self, parameter_list):
+tteteu = '0'
+tnatanin = '1'
+tpeido = '1'
+tmaykon = '1'
+tabioluz = '1'
+tbruno = '1'
 
-    tteteu = True
-    tnatanin = True
-    tlista_rei = True
-    tgustavo = True
-    tvinicios = True
-    tmaykon = True
-    tabioluz = True
-    tbruno = True
+ateteu = '0'
+anatanin = '1'
+apeido = '1'
+amaykon = '1'
+aabioluz = '1'
+abruno = '1'
 
-    cteteu = False
-    cnatanin = False
-    clista_rei = False
-    cgustavo = False
-    cvinicios = False
-    cmaykon = False
-    cabioluz = False
-    cbruno = False
-
-    ateteu = False
-    anatanin = False
-    alista_rei = False
-    agustavo = False
-    avinicios = False
-    amaykon = False
-    aabioluz = False
-    abruno = False
-
-
+ateteu = '0'
+anatanin = '1'
+apeido = '1'
+amaykon = '1'
+aabioluz = '1'
+abruno = '1'
 
 gg = '1'
 while gg == '1':
@@ -40,5 +30,17 @@ while gg == '1':
     ''') 
     if 'sair' in a:
         gg = 'acabou'
+    elif a == '1':
+        b = input('Escolha algem pra entrar no barco1\n')
+        if b == 'teteu':
+            if tteteu == '0':
+                print('opsao invalida')
+
+        ''' aqui mano faz assimm pra caralho conte de if'''
+        
+        if b == '0':
+            print('opsao invalida')
+            
+
 
 print(a)
